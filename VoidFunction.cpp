@@ -6,7 +6,9 @@
 
 using namespace std;
 
+//Function prototype
 void calcSumAndDiff(int n1, int n2, int &sum, int &diff);
+
 int main()
 {
     //Declare Variables
@@ -26,6 +28,13 @@ int main()
 
     //Output Results
     cout << "The Sum of the two numbers is: " << numSum << endl;
-    cout << "The difference is: " << numDiff << endl;
+    cout << "The difference of the two numbers is: " << numDiff << endl;
 
-}   //End Program
+}   //End of Main Function
+
+//*****Function definition*****//
+void calcSumAndDiff(int n1, int n2, int &sum, int &diff)
+{
+    sum = n2 + n1;
+    diff = n2 - n1;
+}   //End of calcSumAndDiff Function
